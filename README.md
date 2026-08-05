@@ -1,5 +1,3 @@
-# 255-Group-Project
-
 # Project Overview
 # The Store Kiosk is a self-service touchscreen application that allows customers to browse products, search inventory, add items to a shopping cart, complete purchases, and receive receipts without assistance from store employees.
 
