@@ -45,7 +45,7 @@ The project is organized into two main areas:
 
 ### Coding
 
-The 'Coding/' folder containers the files used to build the Store Kiosk application
+The 'Coding/' folder contains the files used to build the Store Kiosk application
 
 Example:
 
@@ -58,7 +58,7 @@ Coding/
 
 ### Documents
 
-The `Documents/` folder containers project planning, requirements, Scrum documentation, meeting notes, and other team resources.
+The `Documents/` folder contains project planning, requirements, Scrum documentation, meeting notes, and other team resources.
 
 Example:
 
