@@ -32,6 +32,6 @@ resetButton.addEventListener("click", function (){
     document.getElementById("floor-width").value = "";
 
     document.getElementById("floor-square-footage").textContent = "0";
-    document.getElementById("tile-needed").textContent = "0";
+    document.getElementById("tile-needed").textContent = "";
     document.getElementById("error-message").textContent = "";
 });
