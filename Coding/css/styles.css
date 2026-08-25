@@ -1,0 +1,103 @@
+/* Basic Page Setup */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #222; 
+}
+
+header {
+    background-color: #2f5d3a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+a, 
+button {
+    display: inline-block;
+    background-color: #2f5d3a;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    background-color: #24482d; 
+}
+/* Forms */
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display:block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+/* Results */
+
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f3ea;
+    border-radius: 5px;
+}
+
+/* Error */
+
+.error {
+    color: #b00020;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
