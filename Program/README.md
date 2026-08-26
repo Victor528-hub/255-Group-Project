@@ -29,9 +29,14 @@ git config --global user.email "your.email@example.com"
 Clone the repository:
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone [https://github.com/Victor528-hub/255-Group-Project.git](https://github.com/Victor528-hub/255-Group-Project.git)
 cd <REPOSITORY_NAME>
 ```
+
+### Git remoting commands
+
+git remote add origin "[https://github.com/Victor528-hub/255-Group-Project.git](https://github.com/Victor528-hub/255-Group-Project.git)"
+git remote -v
 
 ### VS Code
 
