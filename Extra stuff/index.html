@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="header-title">
+<div class="headerTitle">
     <h1>DIY Material Estimator Kiosk</h1>
-    <p>Estimate your paint and tile needs for your home projects!</p>
+    <p>Estimate the amount of paint or tile needed for your project.</p>
 </div>
-
 <div class="kiosk-container">
-    <!-- Input cards -->
     <div class="card">
         <h2>Material Estimator</h2>
         
+        <!-- button section-->
         <div class="tab-buttons">
             <button class="tab-btn active-paint" id="paintTabBtn" onclick="switchTab('paint')">Paint Room</button>
+            <button class="tab-btn ceiling-paint" id="ceilingPaintTabBtn" onclick="switchTab('ceilingpaint')">Paint Ceiling</button>
             <button class="tab-btn" id="tileTabBtn" onclick="switchTab('tile')">Tile Floor</button>
         </div>
 
+        <!-- Form input section-->
         <form id="estimatorForm" onsubmit="handleFormSubmit(event)">
             <input type="hidden" id="material_type" value="paint">
 
@@ -30,7 +31,6 @@
                 <input type="text" id="room_name" placeholder="e.g. Master Bedroom" required>
             </div>
 
-            <!-- Paint inputs -->
             <div id="paintForm">
                 <div class="form-group"><label>Room Length (ft)</label><input type="number" step="0.1" id="p_length" value="12"></div>
                 <div class="form-group"><label>Room Width (ft)</label><input type="number" step="0.1" id="p_width" value="10"></div>
@@ -39,33 +39,40 @@
                 <div class="form-group"><label>Number of Windows</label><input type="number" id="p_windows" value="2"></div>
             </div>
 
-            <!-- Tile inputs -->
+            <div id="ceilingForm" class="hidden">
+                <div class="form-group"><label>Ceiling Length (ft)</label><input type="number" step="0.1" id="c_length" value="12"></div>
+                <div class="form-group"><label>Ceiling Width (ft)</label><input type="number" step="0.1" id="c_width" value="10"></div>
+            </div>
+
             <div id="tileForm" class="hidden">
                 <div class="form-group"><label>Floor Length (ft)</label><input type="number" step="0.1" id="t_length" value="10"></div>
                 <div class="form-group"><label>Floor Width (ft)</label><input type="number" step="0.1" id="t_width" value="10"></div>
             </div>
 
-            <button type="submit" class="btn-submit">➕ Add Room to Estimate</button>
+            <button type="submit" class="btn-submit">Add Room to Estimate</button>
         </form>
     </div>
 
-    <!-- cart / checkout section -->
+    <!--Checkout/ cart section-->
     <div class="card">
-        <h2>🛒 Total Project Estimate</h2>
+        <h2>Total Project Estimate</h2>
 
-        <!-- paint section -->
         <div class="cart-section">
-            <h3>🎨 Paint Supplies</h3>
+            <h3>Paint Supplies</h3>
             <div id="paintCartContent"><p>No paint calculations added yet.</p></div>
         </div>
 
-        <!-- Tile section -->
+        <div class="cart-section ceiling-section">
+            <h3>Ceiling Paint Supplies</h3>
+            <div id="ceilingCartContent"><p>No ceiling calculations added yet.</p></div>
+        </div>
+
         <div class="cart-section tile-section">
             <h3>Tile Supplies</h3>
             <div id="tileCartContent"><p>No tile calculations added yet.</p></div>
         </div>
 
-        <button id="clearCartBtn" class="btn-clear hidden" onclick="clearCart()">🗑️ Start New Project</button>
+        <button id="clearCartBtn" class="btn-clear hidden" type="button" onclick="clearCart()">Start New Project</button>
     </div>
 </div>
 
