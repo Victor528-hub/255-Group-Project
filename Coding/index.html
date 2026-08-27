@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIY Material Estimator Kiosk</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="headerTitle">
@@ -15,14 +15,14 @@
     <div class="card">
         <h2>Material Estimator</h2>
         
-        <!-- button section-->
+        <!-- Button section -->
         <div class="tab-buttons">
             <button class="tab-btn active-paint" id="paintTabBtn" onclick="switchTab('paint')">Paint Room</button>
             <button class="tab-btn ceiling-paint" id="ceilingPaintTabBtn" onclick="switchTab('ceilingpaint')">Paint Ceiling</button>
             <button class="tab-btn" id="tileTabBtn" onclick="switchTab('tile')">Tile Floor</button>
         </div>
 
-        <!-- Form input section-->
+        <!-- Form input section -->
         <form id="estimatorForm" onsubmit="handleFormSubmit(event)">
             <input type="hidden" id="material_type" value="paint">
 
@@ -53,7 +53,7 @@
         </form>
     </div>
 
-    <!--Checkout/ cart section-->
+    <!-- Checkout / cart section -->
     <div class="card">
         <h2>Total Project Estimate</h2>
 
@@ -76,6 +76,12 @@
     </div>
 </div>
 
-<script src="script.js"></script>
+<script src="js/read-functions.js"></script>
+<script src="js/write-functions.js"></script>
+<script src="js/operation-selector.js"></script>
+<script src="js/first-calculations.js"></script>
+<script src="js/second-calculations.js"></script>
+<script src="js/menu-functions.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
